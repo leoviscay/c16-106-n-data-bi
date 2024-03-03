@@ -6,3 +6,4 @@ numpy
 sklearn.preprocessing
 tensorflow
 scikit-learn
+yfinance

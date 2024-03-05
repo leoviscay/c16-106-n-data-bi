@@ -7,3 +7,6 @@ sklearn.preprocessing
 tensorflow
 scikit-learn
 yfinance
+python-dotenv
+asyncio
+supabase

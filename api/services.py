@@ -34,7 +34,7 @@ def get_stock_predictions_today(stock_symbol):
     else:
         # Predict, update the record, and return data
         # Make predictions here...
-        final_prediction, last_day, pct_change = get_final_prediction()  
+        final_prediction, last_day, pct_change = get_final_prediction(stock_symbol)  
         # Assuming you have a function to update the prediction in the database
         prediction = update_database(data.data[0].id, final_prediction, last_day, pct_change)
         return prediction, True

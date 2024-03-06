@@ -5,7 +5,7 @@ import keras
 from fastapi.middleware.cors import CORSMiddleware
 
 
-from services import get_stock_predictions_today
+from services import get_stock_predictions_today, get_all_from_db
 app = FastAPI()
 
 origins = [
@@ -29,6 +29,16 @@ def read_root(stock):
         db_data, updated = get_stock_predictions_today(stock)
         print(db_data, updated)
         return {"stock": stock, "predictions": db_data["prediction"], "last_day": db_data["last_day"], "pct_change":db_data["pct_change"]  }
+
+    except Exception as e:
+        print(e)
+        return {"Error": e.__cause__, "keras": keras. __version__}
+    
+@app.get("/all")
+def read_root():
+    try:
+        data = get_all_from_db()
+        return data
 
     except Exception as e:
         print(e)

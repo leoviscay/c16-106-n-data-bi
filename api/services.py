@@ -5,6 +5,15 @@ from predict import loadAndPredict
 
 supabase = create_supabase_client()
 
+def get_all_from_db(): 
+    today = date.today()
+    print("stock_symbol")            
+    print(today) 
+    data = supabase.table('predictions').select('*').eq("created_at",today ).execute()
+    return data.data
+
+
+
 
 def get_stock_predictions_today(stock_symbol):
    

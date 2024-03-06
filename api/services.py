@@ -56,6 +56,7 @@ def insert_into_database(stock_symbol, final_prediction, last_day, pct_change):
         'prediction': final_prediction,
         'last_day': last_day,
         'pct_change': pct_change,
+        "definitive": True
 
     }
     
@@ -80,7 +81,9 @@ def update_database(prediction_id, final_prediction, last_day, pct_change, stock
         'last_day': last_day,
         'pct_change': pct_change,
         "stock": stock,
-        "updated_at":str(current_time)
+        "updated_at":str(current_time),
+        "definitive": True
+
     }
     
     # Assuming you're using Supabase to update data

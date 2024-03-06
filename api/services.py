@@ -36,7 +36,11 @@ def get_stock_predictions_today(stock_symbol):
         # Make predictions here...
         final_prediction, last_day, pct_change = get_final_prediction(stock_symbol)  
         # Assuming you have a function to update the prediction in the database
-        prediction = update_database(data.data[0].id, final_prediction, last_day, pct_change)
+        print("data.data[0].id")
+        print(data.data[0])
+        prediction = update_database(data.data[0]["id"], final_prediction, last_day, pct_change, stock_symbol)
+        print("prediction")
+        print(prediction)
         return prediction, True
 
    
@@ -60,7 +64,7 @@ def insert_into_database(stock_symbol, final_prediction, last_day, pct_change):
     return data.data[0]
 
 
-def update_database(prediction_id, final_prediction, last_day, pct_change):
+def update_database(prediction_id, final_prediction, last_day, pct_change, stock):
     """
     Function to update prediction data in the database.
     """
@@ -69,13 +73,14 @@ def update_database(prediction_id, final_prediction, last_day, pct_change):
         'id': prediction_id,
         'prediction': final_prediction,
         'last_day': last_day,
-        'pct_change': pct_change
+        'pct_change': pct_change,
+        "stock": stock
     }
     
     # Assuming you're using Supabase to update data
     # Replace 'predictions' with your actual table name
     # Also, replace 'supabase' with your actual Supabase client object
-    data = supabase.table('predictions').upsert(updated_prediction_data)
+    data = supabase.table('predictions').upsert(updated_prediction_data).execute()
 
     return data.data[0]
 

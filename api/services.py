@@ -10,7 +10,7 @@ def get_stock_predictions_today(stock_symbol):
    
     today = date.today()
     print("stock_symbol")            
-    print(stock_symbol) 
+    print(today) 
     if isinstance(stock_symbol, str):
         print("The object is of type str.")
     else:
@@ -20,6 +20,8 @@ def get_stock_predictions_today(stock_symbol):
     print(data)
    
     current_time = datetime.now()
+    print("stock_symbol")            
+    print(current_time)
     # Assuming len(data) == 0 or data[0].updated_at
     if len(data.data) == 0:
         # Predict and create a new record in the database
@@ -53,7 +55,8 @@ def insert_into_database(stock_symbol, final_prediction, last_day, pct_change):
         'stock': stock_symbol,
         'prediction': final_prediction,
         'last_day': last_day,
-        'pct_change': pct_change
+        'pct_change': pct_change,
+
     }
     
     # Assuming you're using Supabase to insert data
@@ -68,13 +71,16 @@ def update_database(prediction_id, final_prediction, last_day, pct_change, stock
     """
     Function to update prediction data in the database.
     """
+    current_time = datetime.now()
+
     # Assuming 'predictions' is the table name in your database
     updated_prediction_data = {
         'id': prediction_id,
         'prediction': final_prediction,
         'last_day': last_day,
         'pct_change': pct_change,
-        "stock": stock
+        "stock": stock,
+        "updated_at":str(current_time)
     }
     
     # Assuming you're using Supabase to update data

@@ -2,10 +2,24 @@ from fastapi import FastAPI
 import pandas as pdcd 
 import numpy as np
 import keras
+from fastapi.middleware.cors import CORSMiddleware
+
 
 from services import get_stock_predictions_today
 app = FastAPI()
 
+origins = [
+    "https://finanalytica.vercel.app",
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/prediction/{stock}")

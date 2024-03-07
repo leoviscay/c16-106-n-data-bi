@@ -24,24 +24,6 @@
   </p>
 </div>
 
-<!-- ABOUT THE PROJECT -->
-
-<h1 align="center"> 
-<img src="https://media2.giphy.com/media/4ZrRpqbSaWoyZYRoCd/giphy.gif" width="30px">Acerca del Proyecto
-</h1>
-
-<br />
-  <a href="No-Country/s11-20-m-typescript-react" target="_blank">
-    <img src="https://i.imgur.com/QEsYqAC.png" alt="Logo" width="96" height="96">
-  </a>
-<br />
-
-EarthPoints se basa en la entrega de beneficios y cupones a las personas que toman medidas concretas para reducir su huella ecológica y promover la sostenibilidad. A través de una plataforma en línea de fácil acceso, los participantes podrán registrarse y participar en una amplia variedad de desafíos y actividades amigables con el medio ambiente. A medida que los participantes completen estos desafíos y logren sus objetivos de sostenibilidad, acumularán puntos que se pueden canjear por beneficios y cupones en una red de socios y empresas comprometidas con la causa ambiental. Estos beneficios pueden incluir descuentos en productos ecológicos, acceso a eventos sostenibles, membresías a organizaciones ambientales, entre otros incentivos que refuercen el compromiso con un estilo de vida sustentable.
-
-Nuestra plataforma también proporcionará recursos educativos y seguimiento personalizado para ayudar a los participantes a comprender y mejorar su impacto ambiental a lo largo del tiempo.
-
-Este proyecto no solo busca fomentar hábitos sustentables, sino que también promueve una mayor conciencia ambiental en la sociedad. A través de la recompensa y la comunidad, esperamos inspirar a más personas a abrazar la sostenibilidad como parte integral de sus vidas, creando un mundo más verde y saludable para las generaciones futuras. Únete a nosotros en este emocionante viaje hacia un futuro más sustentable.
-
 <h1 align="center"> 
 <img src="https://media0.giphy.com/media/uhQuegHFqkVYuFMXMQ/giphy.gif" width="30px">Tecnologias Usadas
 </h1>

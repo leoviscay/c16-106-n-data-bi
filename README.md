@@ -37,8 +37,28 @@
 ![Google BigQuery](https://img.shields.io/static/v1?style=for-the-badge&message=Google+BigQuery&color=4285F4&logo=Google+Cloud&logoColor=FFFFFF&label=)
 ![scikit-learn](https://img.shields.io/static/v1?style=for-the-badge&message=scikit-learn&color=F7931E&logo=scikit-learn&logoColor=FFFFFF&label=)
 ![FastAPI](https://img.shields.io/static/v1?style=for-the-badge&message=FastAPI&color=009688&logo=FastAPI&logoColor=FFFFFF&label=)
+![Power BI](https://img.shields.io/static/v1?style=for-the-badge&message=Power+BI&color=ffeb3b&logo=PowerBI&logoColor=ffffff&label=)
 
+<!-- Dash -->
+<h1 align="center"> 
+<img src="https://cdn-icons-png.flaticon.com/512/1748/1748331.png" width="30px">DashBoard
+</h1>
 
+<p>
+<img align="center" src="images/dash1.png" width="50%">
+</p>
+
+<p>
+<img align="center" src="images/dash2.png" width="50%">
+</p>
+
+<p>
+<img align="center" src="images/dash3.png" width="50%">
+</p>
+
+<p>
+<img align="center" src="images/dash4.png" width="50%">
+</p>
 
 
 <!-- Organización -->
